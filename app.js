@@ -108,12 +108,8 @@ function DiceRoll(){
     const die1 = Math.floor((Math.random()*6)+1);
     // 8c
     const die2 = Math.floor((Math.random()*6)+1);
-    // 8d
-    const total = die1 + die2; 
-    if (total === 2) {
-        return <h1>SNAKE EYES</h1>
-    }
-    return <h1>{die1} & {die2}</h1>
+    // 8d 
+    return <h1>{(die1 === 1 && die2 === 1) ? `SNAKE EYES`: `${die1} & ${die2}`}</h1>
 }
 // 8e
 ReactDOM.render(
