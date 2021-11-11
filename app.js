@@ -86,14 +86,14 @@ ReactDOM.render(
 function GhostbustersAll(){
     return(
         <div>
-            <Ghostbusters/>,
+            <Ghostbusters/>, 
             <Tagline/>,
             <Janine/>,
             <MassHysteria/>,
             <GhostbustersLogo/>,
             <ToolsTalent/>
         </div>
-    );
+    ); // Comma's are not needed here
 }
 // 7b
 ReactDOM.render(
